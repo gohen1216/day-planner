@@ -5,9 +5,14 @@ const date = new Date();
 
 console.log(date.getHours());
 
+var saveToLocalStorage = function (hour,value) 
+  {
+    localStorage.setItem(hour,value)
+}
+
 var currenthours = date.getHours();
 
-for(var i=0; i < inputgroupels.length; i ++) {
+    for(var i=0; i < inputgroupels.length; i ++) {
     
     var blockhour = Number(inputgroupels [i] .id)
     console.log (blockhour) 
@@ -21,9 +26,14 @@ for(var i=0; i < inputgroupels.length; i ++) {
         inputgroupels[i].childNodes[3].classList.add("future")
     }
 }
-for(var i=0; i <  savebuttonhours.length; i ++){
+    for(var i=0; i <  savebuttonhours.length; i ++){
     savebuttonhours[i].addEventListener("click",function(event){
         console.log (event.target.previousSibling.previousSibling.value)
+        var uservalue = event.target.previousSibling.previousSibling.value
+        var hourvalue = event.target.parentNode.id
+        saveToLocalStorage(hourvalue,uservalue)
     })
 }
+
+
 
