@@ -3,7 +3,8 @@ var inputgroupels = document.querySelectorAll (".input-group")
 var savebuttonhours = document.querySelectorAll("button")
 const date = new Date();
 
-console.log(date.getHours());
+console.log(date.toLocaleDateString(undefined,{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })+" "+date.toLocaleTimeString('en-US'));
+document.getElementById("currentDay").textContent=(date.toLocaleDateString(undefined,{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })+" "+date.toLocaleTimeString('en-US'));
 
 var saveToLocalStorage = function (hour,value) 
   {
