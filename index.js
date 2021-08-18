@@ -9,13 +9,20 @@ var saveToLocalStorage = function (hour,value)
   {
     localStorage.setItem(hour,value)
 }
-
+var getfromLocalStorage = function (hour) 
+  {
+    return localStorage.getItem(hour)
+}
 var currenthours = date.getHours();
 
     for(var i=0; i < inputgroupels.length; i ++) {
+       
+
+    var blockhour = Number(inputgroupels [i] .id) 
     
-    var blockhour = Number(inputgroupels [i] .id)
     console.log (blockhour) 
+    inputgroupels[i].childNodes[3].value=getfromLocalStorage(blockhour)
+    
     if(blockhour<currenthours){
         inputgroupels[i].childNodes[3].classList.add("past")
     }
