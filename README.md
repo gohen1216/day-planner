@@ -10,7 +10,7 @@ a sceduler that allows you to save notes and reminders from 9 am to 5pm
 ​- [License](#license) 
 
 ## Screenshots
-![screenshot-1](C:/Users/Sanusi/downloads/day-planner/Assets/dayplanner.PNG) 
+![screenshot-1](dayplanner.PNG) 
 ​
 ## Deployment
 ​[live link](https://github.com/gohen1216/day-planner)
