@@ -13,7 +13,7 @@ a sceduler that allows you to save notes and reminders from 9 am to 5pm
 ![screenshot-1](dayplanner.PNG) 
 ​
 ## Deployment
-​[live link](https://github.com/gohen1216/day-planner)
+​[live link](https://gohen1216.github.io/day-planner/)
 ## Contributing
 ​[Sanusi Cole](https://github.com/gohen1216)
 ## License
